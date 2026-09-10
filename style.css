@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #6f7075 0%, #764ba2 100%);
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    background: rgb(27, 214, 158);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+h2 {
+    text-align: center;
+    color: #372e3f;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.clock-section,
+.timer-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #a5b8bac8;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+
+.clock-display,
+.timer-display {
+    background: #333;
+    color: #00ff00;
+    font-size: 3rem;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-family: 'Courier New', monospace;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.timer-display {
+    font-size: 2.5rem;
+}
+
+p {
+    text-align: center;
+    color: #555;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.timer-label {
+    font-size: 0.85rem;
+    color: #000000;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .clock-display,
+    .timer-display {
+        font-size: 2rem;
+    }
+
+    .timer-display {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+}
